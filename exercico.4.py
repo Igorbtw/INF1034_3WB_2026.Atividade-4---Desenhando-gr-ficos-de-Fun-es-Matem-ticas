@@ -44,6 +44,8 @@ def função_4(x):
 def função_5(x):
     return x**2 - 5*x + 6
 
+def função_6(x):
+    return x**3 - x**2 - x + 1
 
 
 #funcao 1
@@ -125,6 +127,19 @@ sleep(2)
 t.clear()
 
 #funcao 6
+t.seth(0)
+t.color('black')
+plano_cartesiano()
 
+t.seth(0)
+t.color('red')
+t.pu()
+t.goto(-30, função_6(-30))
+t.pd()
+for x in range(-30, 20):
+    t.goto(x, função_6(x))
+
+sleep(2)
+t.clear()
 
 mainloop()
