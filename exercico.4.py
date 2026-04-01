@@ -2,6 +2,7 @@ from turtle import *
 
 from time import sleep
 
+
 def soma_2(x):
     return x + 2
 
@@ -23,6 +24,9 @@ def plano_cartesiano():
 
 t = Turtle()
 
+t.speed(10)
+
+
 plano_cartesiano()
 
 def função_1(X):
@@ -35,7 +39,12 @@ def função_3(x):
     return 2**x
 
 def função_4(x):
-    5-x**2
+    return 5 - x**2
+
+def função_5(x):
+    return x**2 - 5*x + 6
+
+
 
 #funcao 1
 t.color('blue')
@@ -77,5 +86,36 @@ t.goto(-100, função_3(-100))
 t.pd()
 for x in range(-99, 9):
     t.goto(x, função_3(x))
+
+sleep(2)
+t.clear()
+
+
+#funcao 4
+t.seth(0)
+t.color('black')
+plano_cartesiano()
+
+t.seth(0)
+t.color('red')
+t.pu()
+t.goto(-20, função_4(-20))
+t.pd()
+for x in range(-21, 101):
+    t.goto(x, função_4(x))
+
+
+#funcao 5
+t.seth(0)
+t.color('black')
+plano_cartesiano()
+
+t.seth(0)
+t.color('red')
+t.pu()
+t.goto(-20, função_4(-20))
+t.pd()
+for x in range(-21, 101):
+    t.goto(x, função_4(x))
 
 mainloop()
