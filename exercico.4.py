@@ -104,6 +104,9 @@ t.pd()
 for x in range(-21, 101):
     t.goto(x, função_4(x))
 
+sleep(2)
+t.clear()
+
 
 #funcao 5
 t.seth(0)
@@ -113,9 +116,15 @@ plano_cartesiano()
 t.seth(0)
 t.color('red')
 t.pu()
-t.goto(-20, função_4(-20))
+t.goto(-20, função_5(-20))
 t.pd()
 for x in range(-21, 101):
-    t.goto(x, função_4(x))
+    t.goto(x, função_5(x))
+
+sleep(2)
+t.clear()
+
+#funcao 6
+
 
 mainloop()
