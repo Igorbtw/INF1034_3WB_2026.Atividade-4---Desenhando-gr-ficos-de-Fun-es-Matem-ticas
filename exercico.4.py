@@ -34,6 +34,8 @@ def função_2(x):
 def função_3(x):
     return 2**x
 
+def função_4(x):
+    5-x**2
 
 #funcao 1
 t.color('blue')
@@ -71,9 +73,9 @@ plano_cartesiano()
 t.seth(0)
 t.color('red')
 t.pu()
-t.goto(1, função_3(100))
+t.goto(-100, função_3(-100))
 t.pd()
-for x in range(50, -301):
+for x in range(-99, 9):
     t.goto(x, função_3(x))
 
 mainloop()
