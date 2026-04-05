@@ -135,7 +135,7 @@ t.color('red')
 t.pu()
 for x in range(-50, 51):
         x = x / 10
-        y = f_cubica(x)
+        y = função_6(x)
         t.goto(x * 20, y * 20)
         t.pd()
 
