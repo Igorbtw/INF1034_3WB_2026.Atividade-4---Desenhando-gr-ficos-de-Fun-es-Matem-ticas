@@ -45,8 +45,7 @@ def função_5(x):
     return x**2 - 5*x + 6
 
 def função_6(x):
-    return x**3 - x**2 - x + 1
-
+    return (x ** 3) - (x ** 2) - x + 1
 
 #funcao 1
 t.color('blue')
