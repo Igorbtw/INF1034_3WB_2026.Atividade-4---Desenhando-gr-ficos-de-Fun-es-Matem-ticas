@@ -120,8 +120,7 @@ t.pu()
 t.goto(-20, função_5(-20))
 t.pd()
 for x in range(-21, 101):
-    x = i / 10
-    t.goto(x, função_5(x))
+     t.goto(x, função_5(x))
 
 sleep(2)
 t.clear()
@@ -134,10 +133,11 @@ plano_cartesiano()
 t.seth(0)
 t.color('red')
 t.pu()
-t.goto(20, função_6(50))
-t.pd()
-for x in range(-30, 31):
-    t.goto(x, função_6(x))
+for x in range(-50, 51):
+        x = x / 10
+        y = f_cubica(x)
+        t.goto(x * 20, y * 20)
+        t.pd()
 
 sleep(2)
 t.clear()
