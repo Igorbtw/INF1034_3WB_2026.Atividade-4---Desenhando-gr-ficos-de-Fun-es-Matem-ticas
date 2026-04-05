@@ -120,6 +120,7 @@ t.pu()
 t.goto(-20, função_5(-20))
 t.pd()
 for x in range(-21, 101):
+    x = i / 10
     t.goto(x, função_5(x))
 
 sleep(2)
