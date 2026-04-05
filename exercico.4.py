@@ -149,7 +149,8 @@ from random import randint
 def corrida(n):
     tartarugas = []
     for i in range(n):
-        t2.pu()
+        t2 = Turtle()
+        t2.penup()
         t2.speed(0)
         t2.goto(-250, 150 - i * 40)
         tartarugas.append(t2)
