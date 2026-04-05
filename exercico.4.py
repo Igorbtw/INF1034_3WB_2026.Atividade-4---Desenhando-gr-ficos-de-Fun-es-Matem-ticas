@@ -142,4 +142,21 @@ for x in range(-50, 51):
 sleep(2)
 t.clear()
 
+# EXTRA
+
+from random import randint
+
+def corrida(n):
+    tartarugas = []
+    for i in range(n):
+        t2.pu()
+        t2.speed(0)
+        t2.goto(-250, 150 - i * 40)
+        tartarugas.append(t2)
+    for _ in range(50):
+        for t2 in tartarugas:
+            t2.forward(randint(1, 5))
+
+corrida(3)
+
 mainloop()
